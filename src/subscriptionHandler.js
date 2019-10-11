@@ -38,6 +38,8 @@ function sendPushNotification(req, res) {
         url
     });
 
+    console.log('Recieved request : ' + message)
+
     const pushSubscription = subscriptions[ subscriptionId ];
     webpush
         .sendNotification(
